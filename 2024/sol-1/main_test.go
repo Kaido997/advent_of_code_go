@@ -22,7 +22,7 @@ func Test_part1(t *testing.T) {
 		{
 			name:  "actual",
 			input: input,
-			want:  1938424,
+			want:  190000,
 		},
 	}
 

@@ -17,12 +17,12 @@ func Test_part1(t *testing.T) {
 		{
 			name:  "example",
 			input: example,
-			want:  11,
+			want:  2,
 		},
 		{
 			name:  "actual",
 			input: input,
-			want:  1938424,
+			want:  306,
 		},
 	}
 
@@ -44,19 +44,19 @@ func Test_part2(t *testing.T) {
 		{
 			name:  "example",
 			input: example,
-			want:  31,
+			want:  6,
 		},
 		{
 			name:  "actual",
 			input: input,
-			want:  22014209,
+			want:  366,
 		},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := part2(tt.input); got != tt.want {
-				t.Errorf("part2 %v want %v", got, tt.want)
+				t.Errorf("'part2': got %v want %v", got, tt.want)
 			}
 		})
 	}
